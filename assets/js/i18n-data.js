@@ -28,16 +28,12 @@ window.I18N_TRANSLATIONS = {
     "th": "<span></span> พร้อมรับโอกาสและความท้าทายใหม่"
   },
   "hero.intro": {
-    "en": "I'm <strong>Sirawit Boonthong</strong>, a Frontend / Full Stack Developer with 4+ years of experience creating responsive, user-focused websites and applications.",
-    "th": "ผมคือ <strong>ศิรวิทย์ บุญทอง</strong> Frontend / Full Stack Developer ที่มีประสบการณ์มากกว่า 4 ปี ในการพัฒนาเว็บไซต์และแอปพลิเคชันที่รองรับทุกอุปกรณ์และให้ความสำคัญกับผู้ใช้งาน"
+    "en": "I'm <strong>Sirawit Boonthong</strong>, a Frontend Developer with nearly 5 years of experience. I build responsive web apps with <strong>Next.js, React and TypeScript</strong> — from Web3 game platforms to back-office dashboards.",
+    "th": "ผมคือ <strong>ศิรวิทย์ บุญทอง</strong> Frontend Developer ประสบการณ์เกือบ 5 ปี พัฒนาเว็บแอปที่รองรับทุกอุปกรณ์ด้วย <strong>Next.js, React และ TypeScript</strong> ตั้งแต่แพลตฟอร์มเกม Web3 ไปจนถึงระบบ back office"
   },
   "hero.explore": {
     "en": "Explore my work <i class=\"bx bx-right-arrow-alt\"></i>",
     "th": "ชมผลงานของฉัน <i class=\"bx bx-right-arrow-alt\"></i>"
-  },
-  "hero.downloadCv": {
-    "en": "Download CV",
-    "th": "ดาวน์โหลด CV"
   },
   "hero.basedIn": {
     "en": "Based in",
@@ -48,12 +44,8 @@ window.I18N_TRANSLATIONS = {
     "th": "นนทบุรี ประเทศไทย"
   },
   "hero.currently": {
-    "en": "Currently crafting",
-    "th": "กำลังสร้างสรรค์"
-  },
-  "hero.interfaces": {
-    "en": "Modern Web Interfaces",
-    "th": "เว็บอินเทอร์เฟซสมัยใหม่"
+    "en": "Main stack",
+    "th": "Stack หลัก"
   },
   "hero.years": {
     "en": "Years<br>experience",
@@ -68,12 +60,12 @@ window.I18N_TRANSLATIONS = {
     "th": "01 / เกี่ยวกับฉัน"
   },
   "about.lead": {
-    "en": "I turn ideas into reliable, visually refined digital products.",
-    "th": "ผมเปลี่ยนไอเดียให้เป็นผลิตภัณฑ์ดิจิทัลที่เชื่อถือได้ สวยงาม และใช้งานจริงได้"
+    "en": "I build the interfaces people actually use — game platforms, dashboards and business tools.",
+    "th": "ผมพัฒนาอินเทอร์เฟซที่ผู้ใช้ใช้งานจริง ทั้งแพลตฟอร์มเกม แดชบอร์ด และระบบสำหรับธุรกิจ"
   },
   "about.story": {
-    "en": "Responsible, adaptable, and detail-oriented, I enjoy solving complex interface problems and continuously learning new technologies. I work effectively both independently and with cross-functional teams, balancing user experience, business goals, and maintainable code.",
-    "th": "ผมเป็นคนรับผิดชอบ ปรับตัวได้ดี และใส่ใจรายละเอียด ชื่นชอบการแก้ปัญหาอินเทอร์เฟซที่ซับซ้อนและเรียนรู้เทคโนโลยีใหม่อย่างต่อเนื่อง สามารถทำงานได้ทั้งแบบอิสระและร่วมกับทีม โดยคำนึงถึงประสบการณ์ผู้ใช้ เป้าหมายทางธุรกิจ และโค้ดที่ดูแลต่อได้ในระยะยาว"
+    "en": "Since 2021 I have worked at KOS Design, shipping Web3 game platforms such as Nakamoto Games and Outlanders together with their admin back offices, mostly in Next.js. Alongside that I freelanced for Planet X Technology on business platforms and service-management systems. I take a feature from Figma to production, care about the details, and pick up new tools quickly.",
+    "th": "ตั้งแต่ปี 2021 ผมทำงานที่ KOS Design พัฒนาแพลตฟอร์มเกม Web3 เช่น Nakamoto Games และ Outlanders รวมถึงระบบ back office โดยใช้ Next.js เป็นหลัก ควบคู่กับงานฟรีแลนซ์ให้ Planet X Technology ในกลุ่มแพลตฟอร์มธุรกิจและระบบจัดการงานบริการ ผมดูแลฟีเจอร์ตั้งแต่ Figma จนขึ้นใช้งานจริง ใส่ใจรายละเอียด และเรียนรู้เครื่องมือใหม่ได้เร็ว"
   },
   "fact.name": {
     "en": "Name",
@@ -83,21 +75,9 @@ window.I18N_TRANSLATIONS = {
     "en": "Nickname",
     "th": "ชื่อเล่น"
   },
-  "fact.birthday": {
-    "en": "Birthday",
-    "th": "วันเกิด"
-  },
-  "fact.birthdayValue": {
-    "en": "28 March 1998",
-    "th": "28 มีนาคม 2541"
-  },
   "fact.education": {
     "en": "Education",
     "th": "การศึกษา"
-  },
-  "fact.degree": {
-    "en": "Bachelor's Degree",
-    "th": "ระดับปริญญาตรี"
   },
   "about.frontendTitle": {
     "en": "Frontend Development",
@@ -106,10 +86,6 @@ window.I18N_TRANSLATIONS = {
   "about.frontendDesc": {
     "en": "Responsive, accessible interfaces with polished interaction and strong visual hierarchy.",
     "th": "พัฒนาอินเทอร์เฟซที่รองรับทุกหน้าจอ เข้าถึงง่าย มีปฏิสัมพันธ์ที่ลื่นไหล และจัดลำดับข้อมูลชัดเจน"
-  },
-  "about.fullstackTitle": {
-    "en": "Full Stack Thinking",
-    "th": "แนวคิดแบบ Full Stack"
   },
   "about.fullstackDesc": {
     "en": "Understanding the complete product flow—from database and APIs to the final user experience.",
@@ -127,93 +103,17 @@ window.I18N_TRANSLATIONS = {
     "en": "02 / EXPERTISE",
     "th": "02 / ความเชี่ยวชาญ"
   },
-  "skills.development": {
-    "en": "Development",
-    "th": "การพัฒนา"
-  },
-  "skills.data": {
-    "en": "Data & Workflow",
-    "th": "ข้อมูลและกระบวนการทำงาน"
-  },
-  "skills.design": {
-    "en": "Design & Collaboration",
-    "th": "การออกแบบและการทำงานร่วมกัน"
-  },
   "exp.label": {
     "en": "03 / EXPERIENCE",
     "th": "03 / ประสบการณ์"
   },
-  "exp.current": {
-    "en": "Current / Recent",
-    "th": "ปัจจุบัน / ล่าสุด"
-  },
-  "exp.software": {
-    "en": "Software Development",
-    "th": "การพัฒนาซอฟต์แวร์"
-  },
-  "exp.planetDesc": {
-    "en": "Contributed to software products with close attention to the complete development process, user experience, reliability, and functional quality.",
-    "th": "มีส่วนร่วมในการพัฒนาผลิตภัณฑ์ซอฟต์แวร์ โดยใส่ใจตั้งแต่กระบวนการพัฒนา ประสบการณ์ผู้ใช้ ความเสถียร และคุณภาพการทำงานของระบบ"
-  },
   "exp.visitCompany": {
-    "en": "Visit company <i class=\"bx bx-up-arrow-alt\"></i>",
-    "th": "เยี่ยมชมบริษัท <i class=\"bx bx-up-arrow-alt\"></i>"
-  },
-  "exp.previous": {
-    "en": "Previous",
-    "th": "ก่อนหน้านี้"
-  },
-  "exp.agency": {
-    "en": "Web Development / Agency",
-    "th": "พัฒนาเว็บไซต์ / เอเจนซี"
-  },
-  "exp.kosDesc": {
-    "en": "Worked within an experienced website design agency that has delivered more than 1,000 projects for clients around the world.",
-    "th": "ทำงานร่วมกับเอเจนซีออกแบบเว็บไซต์ที่มีประสบการณ์และส่งมอบผลงานมากกว่า 1,000 โปรเจกต์ให้กับลูกค้าทั่วโลก"
-  },
-  "exp.visitCompany2": {
     "en": "Visit company <i class=\"bx bx-up-arrow-alt\"></i>",
     "th": "เยี่ยมชมบริษัท <i class=\"bx bx-up-arrow-alt\"></i>"
   },
   "projects.label": {
     "en": "04 / SELECTED WORK",
     "th": "04 / ผลงานที่คัดเลือก"
-  },
-  "project.webExp": {
-    "en": "Web Experience",
-    "th": "ประสบการณ์บนเว็บไซต์"
-  },
-  "project.nakaDesc": {
-    "en": "Immersive digital experience delivered in an agency environment.",
-    "th": "ประสบการณ์ดิจิทัลที่โดดเด่นและมีส่วนร่วม พัฒนาภายใต้สภาพแวดล้อมการทำงานแบบเอเจนซี"
-  },
-  "project.corporate": {
-    "en": "Corporate Website",
-    "th": "เว็บไซต์องค์กร"
-  },
-  "project.campaign": {
-    "en": "Campaign Website",
-    "th": "เว็บไซต์แคมเปญ"
-  },
-  "project.application": {
-    "en": "Application",
-    "th": "แอปพลิเคชัน"
-  },
-  "project.enterprise": {
-    "en": "Enterprise Product",
-    "th": "ผลิตภัณฑ์สำหรับองค์กร"
-  },
-  "project.productDev": {
-    "en": "Product Development",
-    "th": "การพัฒนาผลิตภัณฑ์"
-  },
-  "project.platform": {
-    "en": "Digital Platform Interface",
-    "th": "อินเทอร์เฟซแพลตฟอร์มดิจิทัล"
-  },
-  "project.platformDesc": {
-    "en": "A product-focused interface emphasizing usability and dependable operation.",
-    "th": "อินเทอร์เฟซที่เน้นตัวผลิตภัณฑ์ ใช้งานง่าย และทำงานได้อย่างน่าเชื่อถือ"
   },
   "gallery.label": {
     "en": "05 / BEHIND THE SCENES",
@@ -268,15 +168,179 @@ window.I18N_TRANSLATIONS = {
     "th": "มีโปรเจกต์หรือ<br/>โอกาสใหม่ที่อยากพูดคุยไหม?"
   },
   "marquee.text": {
-    "en": "FRONTEND DEVELOPMENT ✦ UI ENGINEERING ✦ FULL STACK ✦ RESPONSIVE DESIGN ✦ CREATIVE CODING ✦ FRONTEND DEVELOPMENT ✦ UI ENGINEERING ✦ FULL STACK ✦ RESPONSIVE DESIGN ✦ CREATIVE CODING ✦",
-    "th": "FRONTEND DEVELOPMENT ✦ UI ENGINEERING ✦ FULL STACK ✦ RESPONSIVE DESIGN ✦ CREATIVE CODING ✦ FRONTEND DEVELOPMENT ✦ UI ENGINEERING ✦ FULL STACK ✦ RESPONSIVE DESIGN ✦ CREATIVE CODING ✦"
+    "en": "FRONTEND DEVELOPMENT ✦ NEXT.JS / REACT ✦ TYPESCRIPT ✦ WEB3 INTERFACES ✦ RESPONSIVE DESIGN ✦ FRONTEND DEVELOPMENT ✦ NEXT.JS / REACT ✦ TYPESCRIPT ✦ WEB3 INTERFACES ✦ RESPONSIVE DESIGN ✦ ",
+    "th": "FRONTEND DEVELOPMENT ✦ NEXT.JS / REACT ✦ TYPESCRIPT ✦ WEB3 INTERFACES ✦ RESPONSIVE DESIGN ✦ FRONTEND DEVELOPMENT ✦ NEXT.JS / REACT ✦ TYPESCRIPT ✦ WEB3 INTERFACES ✦ RESPONSIVE DESIGN ✦ "
   },
   "meta.title": {
-    "en": "Sirawit Boonthong — Developer Portfolio",
-    "th": "ศิรวิทย์ บุญทอง — Developer Portfolio"
+    "en": "Sirawit Boonthong — Frontend Developer (Next.js / React)",
+    "th": "ศิรวิทย์ บุญทอง — Frontend Developer (Next.js / React)"
   },
   "meta.description": {
-    "en": "Portfolio of Sirawit Boonthong — Frontend / Full Stack Developer",
-    "th": "ผลงานของศิรวิทย์ บุญทอง — Frontend / Full Stack Developer"
+    "en": "Sirawit Boonthong — Frontend Developer in Thailand with nearly 5 years of experience building Next.js / React web apps, Web3 game platforms and back-office systems.",
+    "th": "ศิรวิทย์ บุญทอง — Frontend Developer ประสบการณ์เกือบ 5 ปี พัฒนาเว็บแอปด้วย Next.js / React ทั้งแพลตฟอร์มเกม Web3 และระบบ back office"
+  },
+  "hero.downloadResume": {
+    "en": "Download resume",
+    "th": "ดาวน์โหลดเรซูเม่"
+  },
+  "hero.stack": {
+    "en": "Next.js · React · TypeScript",
+    "th": "Next.js · React · TypeScript"
+  },
+  "fact.focus": {
+    "en": "Focus",
+    "th": "ความถนัด"
+  },
+  "fact.focusValue": {
+    "en": "Frontend · Next.js / React",
+    "th": "Frontend · Next.js / React"
+  },
+  "fact.educationValue": {
+    "en": "KMUTNB — Electronic Engineering Technology, 2017–2021",
+    "th": "มจพ. (KMUTNB) — เทคโนโลยีวิศวกรรมอิเล็กทรอนิกส์ 2560–2564"
+  },
+  "about.fullstackTitle": {
+    "en": "Full-stack awareness",
+    "th": "เข้าใจงานทั้ง Stack"
+  },
+  "skills.core": {
+    "en": "Core — used daily",
+    "th": "หลัก — ใช้ประจำ"
+  },
+  "skills.also": {
+    "en": "Also worked with",
+    "th": "เคยใช้งาน"
+  },
+  "skills.design": {
+    "en": "Design tools",
+    "th": "เครื่องมือออกแบบ"
+  },
+  "exp.kos.date": {
+    "en": "Nov 2021 — Present",
+    "th": "พ.ย. 2021 — ปัจจุบัน"
+  },
+  "exp.kos.role": {
+    "en": "FULL STACK DEVELOPER · FRONTEND-FOCUSED",
+    "th": "FULL STACK DEVELOPER · เน้น FRONTEND"
+  },
+  "exp.kos.b1": {
+    "en": "Built <strong>Nakamoto Games</strong>, an NFT game aggregation platform, in Next.js — the user interface plus Web3 digital-wallet integration.",
+    "th": "พัฒนา <strong>Nakamoto Games</strong> แพลตฟอร์มรวมเกม NFT ด้วย Next.js ทั้งส่วน UI และการเชื่อมต่อ digital wallet แบบ Web3"
+  },
+  "exp.kos.b2": {
+    "en": "Developed the Nakamoto admin back office used to manage platform data, statuses and day-to-day operations.",
+    "th": "พัฒนาระบบ back office ของ Nakamoto สำหรับจัดการข้อมูล สถานะ และการดำเนินงานของแพลตฟอร์ม"
+  },
+  "exp.kos.b3": {
+    "en": "Built <strong>Outlanders</strong>, a Web3 NFT game — UI and core gameplay features in Next.js, with 3D character models rendered in Three.js.",
+    "th": "พัฒนา <strong>Outlanders</strong> เกม NFT บน Web3 ทั้ง UI และฟังก์ชันหลักของเกมด้วย Next.js พร้อมแสดงโมเดลตัวละคร 3D ด้วย Three.js"
+  },
+  "exp.kos.b4": {
+    "en": "Delivered <strong>Monster Ville</strong>, a Telegram mini-game app with bot integration, and the Nakaverse game information page.",
+    "th": "ส่งมอบ <strong>Monster Ville</strong> มินิเกมบน Telegram ที่เชื่อมต่อกับบอท และหน้าเว็บข้อมูลเกม Nakaverse"
+  },
+  "exp.px.date": {
+    "en": "Nov 2023 — Jul 2024",
+    "th": "พ.ย. 2023 — ก.ค. 2024"
+  },
+  "exp.px.type": {
+    "en": "Freelance",
+    "th": "ฟรีแลนซ์"
+  },
+  "exp.px.role": {
+    "en": "FRONTEND DEVELOPER · FREELANCE",
+    "th": "FRONTEND DEVELOPER · ฟรีแลนซ์"
+  },
+  "exp.px.b1": {
+    "en": "Built the UI and core features of <strong>Deal</strong>, an online platform matching investors with entrepreneurs, and its back office, in Next.js.",
+    "th": "พัฒนา UI และฟังก์ชันหลักของ <strong>Deal</strong> แพลตฟอร์มจับคู่นักลงทุนกับผู้ประกอบการ รวมถึงระบบ back office ด้วย Next.js"
+  },
+  "exp.px.b2": {
+    "en": "Designed and developed <strong>GOGOJII Privilege</strong>, a voucher and privileges platform, with its back-office management system.",
+    "th": "ออกแบบและพัฒนา <strong>GOGOJII Privilege</strong> แพลตฟอร์มรวมเวาเชอร์และสิทธิพิเศษ พร้อมระบบจัดการหลังบ้าน"
+  },
+  "exp.px.b3": {
+    "en": "Built <strong>GOGOJII Maid Service &amp; Work Order</strong>, a system for requesting and managing housekeeping jobs.",
+    "th": "พัฒนา <strong>GOGOJII Maid Service &amp; Work Order</strong> ระบบสั่งงานและจัดการงานบริการแม่บ้าน"
+  },
+  "exp.px.b4": {
+    "en": "Developed the first version of the company's landing page.",
+    "th": "พัฒนาหน้า landing page เวอร์ชันแรกของบริษัท"
+  },
+  "exp.scb.date": {
+    "en": "Jan — Apr 2021",
+    "th": "ม.ค. — เม.ย. 2021"
+  },
+  "exp.scb.type": {
+    "en": "Internship",
+    "th": "ฝึกงาน"
+  },
+  "exp.scb.role": {
+    "en": "DEVELOPER INTERN · DIGITAL BANKING",
+    "th": "นักศึกษาฝึกงาน DEVELOPER · DIGITAL BANKING"
+  },
+  "exp.scb.b1": {
+    "en": "Designed screens in Figma and built an internal admin web dashboard with Next.js and Express.js.",
+    "th": "ออกแบบหน้าจอด้วย Figma และพัฒนาเว็บแดชบอร์ดสำหรับผู้ดูแลระบบภายในด้วย Next.js และ Express.js"
+  },
+  "project.role.uiCore": {
+    "en": "Role: UI and core features",
+    "th": "บทบาท: UI และฟังก์ชันหลัก"
+  },
+  "project.role.ui": {
+    "en": "Role: UI design and implementation",
+    "th": "บทบาท: ออกแบบและพัฒนา UI"
+  },
+  "project.role.uiBo": {
+    "en": "Role: UI, core features and back office",
+    "th": "บทบาท: UI ฟังก์ชันหลัก และ back office"
+  },
+  "project.nakamoto.tag": {
+    "en": "WEB3 GAME PLATFORM · KOS DESIGN",
+    "th": "แพลตฟอร์มเกม WEB3 · KOS DESIGN"
+  },
+  "project.nakamoto.desc": {
+    "en": "An NFT game aggregation platform where players connect a digital wallet and play across many games. Includes the admin back office.",
+    "th": "แพลตฟอร์มรวมเกม NFT ที่ผู้เล่นเชื่อมต่อ digital wallet แล้วเล่นได้หลายเกมในที่เดียว รวมถึงระบบ back office"
+  },
+  "project.outlanders.tag": {
+    "en": "WEB3 NFT GAME · KOS DESIGN",
+    "th": "เกม NFT บน WEB3 · KOS DESIGN"
+  },
+  "project.outlanders.desc": {
+    "en": "A wallet-based NFT game with 3D character models rendered in the browser.",
+    "th": "เกม NFT ที่เล่นผ่าน digital wallet พร้อมโมเดลตัวละคร 3D บนเบราว์เซอร์"
+  },
+  "project.nakaverse.tag": {
+    "en": "GAME INFORMATION SITE · KOS DESIGN",
+    "th": "เว็บไซต์ข้อมูลเกม · KOS DESIGN"
+  },
+  "project.nakaverse.desc": {
+    "en": "The information site presenting the Nakaverse game in detail.",
+    "th": "เว็บไซต์นำเสนอรายละเอียดของเกม Nakaverse"
+  },
+  "project.deal.tag": {
+    "en": "INVESTMENT MATCHING PLATFORM · PLANET X",
+    "th": "แพลตฟอร์มจับคู่การลงทุน · PLANET X"
+  },
+  "project.deal.desc": {
+    "en": "An online platform connecting investors with entrepreneurs, plus its back office.",
+    "th": "แพลตฟอร์มออนไลน์ที่เชื่อมนักลงทุนกับผู้ประกอบการ พร้อมระบบ back office"
+  },
+  "project.privilege.tag": {
+    "en": "VOUCHER PLATFORM · PLANET X",
+    "th": "แพลตฟอร์มเวาเชอร์ · PLANET X"
+  },
+  "project.privilege.desc": {
+    "en": "A platform gathering vouchers and privileges to help merchants grow sales, with a back-office dashboard.",
+    "th": "แพลตฟอร์มรวมเวาเชอร์และสิทธิพิเศษเพื่อช่วยเพิ่มยอดขายให้ผู้ประกอบการ พร้อมแดชบอร์ดหลังบ้าน"
+  },
+  "project.maid.tag": {
+    "en": "SERVICE MANAGEMENT SYSTEM · PLANET X",
+    "th": "ระบบจัดการงานบริการ · PLANET X"
+  },
+  "project.maid.desc": {
+    "en": "A work-order system for requesting and tracking housekeeping services, making room-cleaning operations faster.",
+    "th": "ระบบสั่งงานและติดตามงานบริการแม่บ้าน ช่วยให้การทำความสะอาดห้องพักสะดวกและรวดเร็วขึ้น"
   }
 };
