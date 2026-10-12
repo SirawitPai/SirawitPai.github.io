@@ -4,168 +4,107 @@
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <meta
-      content="Sirawit Boonthong — Frontend Developer in Thailand with nearly 5 years of experience building Next.js / React web apps, Web3 game platforms and back-office systems."
+      content="Sirawit Boonthong — Full Stack Developer (frontend-focused) with 4 years 9 months of experience in Next.js, React and TypeScript, plus hands-on testing with Cypress, Postman and Jira. Open to Full Stack, Manual QA and QA Automation roles."
       name="description"
     />
-    <title>Sirawit Boonthong — Frontend Developer (Next.js / React)</title>
+    <title>Sirawit Boonthong — Full Stack Developer &amp; QA</title>
     <link href="https://sirawitpai.github.io/" rel="canonical" />
     <meta content="website" property="og:type" />
+    <meta content="Sirawit Boonthong — Full Stack Developer &amp; QA" property="og:title" />
     <meta
-      content="Sirawit Boonthong — Frontend Developer (Next.js / React)"
-      property="og:title"
-    />
-    <meta
-      content="Sirawit Boonthong — Frontend Developer in Thailand with nearly 5 years of experience building Next.js / React web apps, Web3 game platforms and back-office systems."
+      content="Full Stack Developer (frontend-focused) with 4 years 9 months of experience in Next.js, React and TypeScript, plus hands-on testing with Cypress, Postman and Jira."
       property="og:description"
     />
     <meta content="https://sirawitpai.github.io/" property="og:url" />
-    <meta
-      content="https://sirawitpai.github.io/assets/img/about.jpg"
-      property="og:image"
-    />
+    <meta content="https://sirawitpai.github.io/assets/img/about.webp" property="og:image" />
     <link href="assets/img/box.png" rel="icon" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+Thai:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+Thai:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link href="assets/css/portfolio.css" rel="stylesheet" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Sirawit Boonthong",
-        "jobTitle": "Frontend Developer",
+        "jobTitle": "Full Stack Developer",
         "url": "https://sirawitpai.github.io/",
         "email": "mailto:sirawitpai0@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Nonthaburi",
-          "addressCountry": "TH"
-        },
-        "sameAs": [
-          "https://github.com/SirawitPai",
-          "https://www.linkedin.com/in/sirawit-pai-13342b200/"
-        ],
-        "knowsAbout": [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "JavaScript",
-          "Three.js",
-          "Web3"
-        ]
+        "address": { "@type": "PostalAddress", "addressLocality": "Nonthaburi", "addressCountry": "TH" },
+        "sameAs": ["https://github.com/SirawitPai", "https://www.linkedin.com/in/sirawit-pai-13342b200/"],
+        "knowsAbout": ["Next.js", "React", "TypeScript", "JavaScript", "Node.js", "Three.js", "Web3", "Cypress", "Postman", "Jira", "Software Testing"]
       }
     </script>
   </head>
 
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="cursor-glow"></div>
-    <div class="noise"></div>
-    <div id="loader">
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div id="loader" aria-hidden="true">
       <div class="loader-mark">SB<span>.</span></div>
+      <div class="loader-bar"><i></i></div>
     </div>
+
     <header class="nav-wrap">
       <nav class="nav container" aria-label="Main">
-        <a class="brand" href="#home" aria-label="Sirawit Boonthong — home"
-          >SB<span>.</span></a
-        >
+        <a class="brand" href="#home" aria-label="Sirawit Boonthong — home">SB<span>.</span></a>
         <div class="nav-links" id="navLinks">
           <a data-i18n="nav.about" href="#about">About</a
+          ><a data-i18n="nav.roles" href="#roles">Roles</a
           ><a data-i18n="nav.skills" href="#skills">Skills</a
+          ><a data-i18n="nav.qa" href="#qa">QA</a
           ><a data-i18n="nav.experience" href="#experience">Experience</a
           ><a data-i18n="nav.projects" href="#projects">Projects</a
           ><a data-i18n="nav.contact" href="#contact">Contact</a>
         </div>
         <div class="nav-actions">
-          <button
-            aria-label="Switch language"
-            class="lang-btn"
-            id="langBtn"
-            title="เปลี่ยนภาษา / Switch language"
-            type="button"
-          >
-            TH
-          </button>
-          <button
-            aria-label="Toggle theme"
-            class="theme-btn"
-            id="themeBtn"
-            type="button"
-          >
-            <i class="bx bx-moon"></i>
-          </button>
-          <a
-            class="mini-cta"
-            data-i18n="nav.resume"
-            download=""
-            href="assets/pdf/Resume-SIRAWIT.pdf"
+          <button aria-label="Switch language" class="lang-btn" id="langBtn" type="button">TH</button>
+          <button aria-label="Toggle theme" class="theme-btn" id="themeBtn" type="button"><i class="bx bx-moon"></i></button>
+          <a class="mini-cta" data-i18n="nav.resume" download="" href="assets/pdf/Resume-SIRAWIT.pdf"
             >Resume <i class="bx bx-down-arrow-alt"></i
           ></a>
-          <button
-            aria-controls="navLinks"
-            aria-expanded="false"
-            aria-label="Open menu"
-            class="menu-btn"
-            id="menuBtn"
-            type="button"
-          >
+          <button aria-controls="navLinks" aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menuBtn" type="button">
             <i class="bx bx-menu-alt-right"></i>
           </button>
         </div>
       </nav>
     </header>
+
     <main id="main">
+      <!-- ============ HERO ============ -->
       <section class="hero container" id="home">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
         <div class="hero-copy reveal">
-          <div class="eyebrow" data-i18n="hero.available">
-            <span></span> AVAILABLE FOR NEW OPPORTUNITIES
+          <div class="eyebrow" data-i18n="hero.available"><span></span> OPEN TO FULL STACK &amp; QA ROLES</div>
+          <h1 data-i18n="hero.title" data-split>Building digital<br />experiences that<br /><em>feel alive.</em></h1>
+          <div class="role-line">
+            <span class="role-prefix" data-i18n="hero.rolePrefix">Looking for</span>
+            <span class="role-typed" aria-hidden="true"><span id="typedRole">Full Stack Developer</span><span class="caret"></span></span>
+            <span class="sr-only">Full Stack Developer, Manual QA, QA Automation</span>
           </div>
-          <h1 data-i18n="hero.title">
-            Building digital<br />experiences that<br /><em>feel alive.</em>
-          </h1>
           <p data-i18n="hero.intro">
-            I'm <strong>Sirawit Boonthong</strong>, a Frontend Developer with
-            nearly 5 years of experience. I build responsive web apps with
-            <strong>Next.js, React and TypeScript</strong> — from Web3 game
-            platforms to back-office dashboards.
+            I'm <strong>Sirawit Boonthong</strong>, a frontend-focused Full Stack Developer with
+            <strong>4 years 9 months</strong> of experience in <strong>Next.js, React and TypeScript</strong>. I also
+            test what I build — APIs in Postman, user flows in Cypress, bugs tracked in Jira.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" data-i18n="hero.explore" href="#projects"
+            <a class="btn primary magnetic" data-i18n="hero.explore" href="#projects"
               >Explore my work <i class="bx bx-right-arrow-alt"></i
             ></a>
-            <a
-              class="btn ghost"
-              data-i18n="hero.downloadResume"
-              download=""
-              href="assets/pdf/Resume-SIRAWIT.pdf"
-              >Download resume</a
-            >
+            <a class="btn ghost" data-i18n="hero.downloadResume" download="" href="assets/pdf/Resume-SIRAWIT.pdf">Download resume</a>
           </div>
           <div class="socials">
-            <a
-              aria-label="GitHub"
-              href="https://github.com/SirawitPai"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a
-              aria-label="LinkedIn"
-              href="https://www.linkedin.com/in/sirawit-pai-13342b200/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-            <a aria-label="Email" href="mailto:sirawitpai0@gmail.com"
-              ><i class="bx bx-envelope"></i
-            ></a>
+            <a aria-label="GitHub" href="https://github.com/SirawitPai" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/sirawit-pai-13342b200/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+            <a aria-label="Email" href="mailto:sirawitpai0@gmail.com"><i class="bx bx-envelope"></i></a>
           </div>
         </div>
         <div class="hero-visual reveal">
@@ -173,511 +112,529 @@
           <div class="orbit orbit-two"></div>
           <div class="portrait-card tilt">
             <div class="status-dot"></div>
-            <img
-              alt="Sirawit Boonthong"
-              src="assets/img/about.webp"
-              width="800"
-              height="1000"
-            />
+            <img alt="Sirawit Boonthong" src="assets/img/about.webp" width="800" height="1000" />
             <div class="portrait-label">
-              <span data-i18n="hero.basedIn">Based in</span
-              ><strong data-i18n="hero.location">Nonthaburi, Thailand</strong>
+              <span data-i18n="hero.basedIn">Based in</span><strong data-i18n="hero.location">Nonthaburi, Thailand</strong>
             </div>
+          </div>
+          <div class="float-card qa-card">
+            <i class="bx bx-check-shield"></i>
+            <div><small data-i18n="hero.qaSmall">Quality &amp; testing</small><strong>Cypress · Postman · Jira</strong></div>
           </div>
           <div class="float-card code-card">
             <i class="bx bx-code-alt"></i>
-            <div>
-              <small data-i18n="hero.currently">Main stack</small
-              ><strong data-i18n="hero.stack"
-                >Next.js · React · TypeScript</strong
-              >
-            </div>
+            <div><small data-i18n="hero.currently">Main stack</small><strong>Next.js · React · TypeScript</strong></div>
           </div>
           <div class="float-card exp-card">
-            <strong>~5</strong
-            ><span data-i18n="hero.years">Years<br />experience</span>
+            <strong>~<span data-count="5">5</span></strong>
+            <span data-i18n="hero.years">Years<br />experience</span>
           </div>
         </div>
-        <a class="scroll-hint" href="#about"
-          ><span data-i18n="hero.scroll">Scroll to discover</span
-          ><i class="bx bx-down-arrow-alt"></i
-        ></a>
+        <a class="scroll-hint" href="#about"><span data-i18n="hero.scroll">Scroll to discover</span><i class="bx bx-down-arrow-alt"></i></a>
       </section>
+
+      <!-- ============ MARQUEE ============ -->
       <section class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span data-i18n="marquee.text"
-            >FRONTEND DEVELOPMENT ✦ NEXT.JS / REACT ✦ TYPESCRIPT ✦ WEB3
-            INTERFACES ✦ RESPONSIVE DESIGN ✦ FRONTEND DEVELOPMENT ✦ NEXT.JS /
-            REACT ✦ TYPESCRIPT ✦ WEB3 INTERFACES ✦ RESPONSIVE DESIGN ✦
-          </span>
+        <div class="marquee-row" data-dir="-1">
+          <div class="marquee-track">
+            <span>FULL STACK DEVELOPMENT</span><b>✦</b><span>NEXT.JS / REACT</span><b>✦</b><span>TYPESCRIPT</span><b>✦</b><span>NODE.JS</span><b>✦</b><span>WEB3 INTERFACES</span><b>✦</b><span>BACK-OFFICE SYSTEMS</span><b>✦</b>
+          </div>
+        </div>
+        <div class="marquee-row alt" data-dir="1">
+          <div class="marquee-track">
+            <span>QA &amp; TESTING</span><b>✓</b><span>CYPRESS</span><b>✓</b><span>POSTMAN</span><b>✓</b><span>JIRA</span><b>✓</b><span>E2E · COMPONENT · UNIT</span><b>✓</b><span>BUG REPORTING</span><b>✓</b>
+          </div>
         </div>
       </section>
+
+      <!-- ============ 01 ABOUT ============ -->
       <section class="section container" id="about">
         <div class="section-head reveal">
           <span data-i18n="about.label">01 / ABOUT</span>
-          <h2 data-i18n="about.title">
-            Code with purpose.<br /><em>Design with empathy.</em>
-          </h2>
+          <h2 data-i18n="about.title" data-split>Code with purpose.<br /><em>Test with intent.</em></h2>
         </div>
         <div class="about-grid">
-          <div class="about-story reveal">
-            <p class="lead" data-i18n="about.lead">
-              I build the interfaces people actually use — game platforms,
-              dashboards and business tools.
+          <div class="about-story">
+            <p class="lead scrub" data-i18n="about.lead">
+              I build the interfaces people actually use — game platforms, dashboards and business tools — and I make sure
+              they hold up when real users arrive.
             </p>
-            <p data-i18n="about.story">
-              Since 2021 I have worked at KOS Design, shipping Web3 game
-              platforms such as Nakamoto Games and Outlanders together with
-              their admin back offices, mostly in Next.js. Alongside that I
-              freelanced for Planet X Technology on business platforms and
-              service-management systems. I take a feature from Figma to
-              production, care about the details, and pick up new tools quickly.
+            <p class="reveal" data-i18n="about.story">
+              Since 2021 I've worked at KOS Design, shipping Web3 game platforms such as Nakamoto Games and Outlanders
+              along with their admin back offices, mostly in Next.js. In parallel, I freelanced for Planet X Technology
+              on business platforms and service-management systems. I take features from Figma to production, test them
+              along the way, and pick up new tools quickly.
             </p>
-            <div class="facts">
-              <div>
-                <span data-i18n="fact.name">Name</span
-                ><strong>Sirawit Boonthong</strong>
-              </div>
-              <div>
-                <span data-i18n="fact.nickname">Nickname</span
-                ><strong>Pai</strong>
-              </div>
-              <div>
-                <span data-i18n="fact.focus">Focus</span
-                ><strong data-i18n="fact.focusValue"
-                  >Frontend · Next.js / React</strong
-                >
-              </div>
-              <div>
-                <span data-i18n="fact.education">Education</span
-                ><strong data-i18n="fact.educationValue"
-                  >KMUTNB — Electronic Engineering Technology, 2017–2021</strong
-                >
-              </div>
+            <div class="facts reveal">
+              <div><span data-i18n="fact.name">Name</span><strong>Sirawit Boonthong</strong></div>
+              <div><span data-i18n="fact.nickname">Nickname</span><strong>Pai</strong></div>
+              <div><span data-i18n="fact.focus">Focus</span><strong data-i18n="fact.focusValue">Full Stack (frontend-focused) · QA</strong></div>
+              <div><span data-i18n="fact.education">Education</span><strong data-i18n="fact.educationValue">KMUTNB — Electronic Engineering Technology, 2017–2021</strong></div>
             </div>
           </div>
-          <div class="about-cards reveal">
-            <article>
-              <i class="bx bx-laptop"></i>
-              <h3 data-i18n="about.frontendTitle">Frontend Development</h3>
-              <p data-i18n="about.frontendDesc">
-                Responsive, accessible interfaces with polished interaction and
-                strong visual hierarchy.
+          <div class="about-side">
+            <div class="stats stagger">
+              <div class="stat spot">
+                <strong><span data-count="4">4</span><small>y</small> <span data-count="9">9</span><small>m</small></strong>
+                <span data-i18n="stat.exp">Frontend experience</span>
+              </div>
+              <div class="stat spot">
+                <strong><span data-count="10">10</span></strong>
+                <span data-i18n="stat.products">Products &amp; systems delivered</span>
+              </div>
+              <div class="stat spot">
+                <strong><span data-count="3">3</span></strong>
+                <span data-i18n="stat.companies">Companies, from banking to Web3</span>
+              </div>
+            </div>
+            <div class="about-cards stagger">
+              <article class="tilt-soft spot">
+                <i class="bx bx-laptop"></i>
+                <div>
+                  <h3 data-i18n="about.frontendTitle">Frontend Development</h3>
+                  <p data-i18n="about.frontendDesc">Responsive, accessible interfaces with polished interactions and a clear visual hierarchy.</p>
+                </div>
+              </article>
+              <article class="tilt-soft spot">
+                <i class="bx bx-layer"></i>
+                <div>
+                  <h3 data-i18n="about.fullstackTitle">Full Stack Delivery</h3>
+                  <p data-i18n="about.fullstackDesc">Comfortable across the whole flow — database and APIs through to the final user experience.</p>
+                </div>
+              </article>
+              <article class="tilt-soft spot">
+                <i class="bx bx-check-shield"></i>
+                <div>
+                  <h3 data-i18n="about.qaTitle">Quality Mindset</h3>
+                  <p data-i18n="about.qaDesc">Testing is part of how I build: APIs, user flows and edge cases checked before release.</p>
+                </div>
+              </article>
+              <article class="tilt-soft spot">
+                <i class="bx bx-palette"></i>
+                <div>
+                  <h3 data-i18n="about.uiTitle">UI &amp; Product Design</h3>
+                  <p data-i18n="about.uiDesc">Bridging design and engineering with Figma, Adobe tools and detail-driven implementation.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 02 ROLES ============ -->
+      <section class="section roles-section" id="roles">
+        <div class="container">
+          <div class="section-head reveal">
+            <span data-i18n="roles.label">02 / OPEN TO WORK</span>
+            <h2 data-i18n="roles.title" data-split>I build it right.<br /><em>Then I try to break it.</em></h2>
+            <p class="section-description" data-i18n="roles.intro">
+              My primary focus is Full Stack Development. I'm also open to Manual QA and QA Automation roles, where my
+              developer background helps me find issues faster and explain them clearly.
+            </p>
+          </div>
+          <div class="roles-status stagger">
+            <div class="status-pill"><span class="live-dot"></span><span data-i18n="roles.status">Actively looking</span></div>
+            <div><small data-i18n="roles.primaryLabel">Primary focus</small><strong>Full Stack Developer</strong></div>
+            <div><small data-i18n="roles.alsoLabel">Also open to</small><strong>Manual QA · QA Automation</strong></div>
+            <div><small data-i18n="roles.locLabel">Based in</small><strong data-i18n="roles.loc">Nonthaburi, Thailand</strong></div>
+          </div>
+          <div class="roles-grid">
+            <article class="role-card role-main spot reveal" data-bg="BUILD">
+              <div class="role-top">
+                <span class="role-tag" data-i18n="roles.fs.tag">01 · PRIMARY FOCUS</span>
+                <i class="bx bx-layer role-icon"></i>
+              </div>
+              <h3>Full Stack Developer</h3>
+              <p class="role-pitch" data-i18n="roles.fs.pitch">
+                4 years 9 months shipping production web apps — from Web3 game platforms to admin back offices. Strongest
+                on the frontend, and comfortable across the stack to deliver a feature end to end.
               </p>
+              <ul class="role-list">
+                <li data-i18n="roles.fs.b1">Production UIs in <strong>Next.js, React &amp; TypeScript</strong> — responsive, fast and true to the Figma design</li>
+                <li data-i18n="roles.fs.b2">Back-office systems &amp; dashboards: data tables, forms, statuses and admin flows</li>
+                <li data-i18n="roles.fs.b3">APIs and server-side work with <strong>Node.js / Express</strong>, REST, MongoDB, MySQL and Firebase</li>
+                <li data-i18n="roles.fs.b4">A tester's mindset — edge cases and test coverage considered from the first commit</li>
+              </ul>
+              <div class="chips tags">
+                <span>Next.js</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>REST API</span><span>MongoDB</span><span>MySQL</span>
+              </div>
+              <a class="role-link" href="mailto:sirawitpai0@gmail.com?subject=Full%20Stack%20Developer%20opportunity" data-i18n="roles.cta">Discuss this role <i class="bx bx-up-arrow-alt"></i></a>
             </article>
-            <article>
-              <i class="bx bx-layer"></i>
-              <h3 data-i18n="about.fullstackTitle">Full-stack awareness</h3>
-              <p data-i18n="about.fullstackDesc">
-                Understanding the complete product flow—from database and APIs
-                to the final user experience.
+            <article class="role-card spot reveal" data-bg="QA">
+              <div class="role-top">
+                <span class="role-tag" data-i18n="roles.manual.tag">02 · ALSO OPEN TO</span>
+                <i class="bx bx-search-alt role-icon"></i>
+              </div>
+              <h3>Manual QA / QA Tester</h3>
+              <p class="role-pitch" data-i18n="roles.manual.pitch">
+                Hands-on testing of systems and multi-page web workflows. I know how web apps are built, so I know where
+                to look.
               </p>
+              <ul class="role-list">
+                <li data-i18n="roles.manual.b1"><strong>System &amp; workflow testing</strong> — checking every step a user takes across pages</li>
+                <li data-i18n="roles.manual.b2"><strong>API testing</strong> in Postman — status codes, responses and error cases</li>
+                <li data-i18n="roles.manual.b3"><strong>Bug reports in Jira</strong> — clear steps, expected vs. actual, retest after fixes</li>
+              </ul>
+              <div class="chips tags"><span>Postman</span><span>Jira</span><span>Web workflows</span></div>
+              <a class="role-link" href="mailto:sirawitpai0@gmail.com?subject=Manual%20QA%20opportunity" data-i18n="roles.cta">Discuss this role <i class="bx bx-up-arrow-alt"></i></a>
             </article>
-            <article>
-              <i class="bx bx-palette"></i>
-              <h3 data-i18n="about.uiTitle">UI & Product Design</h3>
-              <p data-i18n="about.uiDesc">
-                Bridging design and engineering through Figma, Adobe tools, and
-                detail-driven implementation.
+            <article class="role-card spot reveal" data-bg="AUTO">
+              <div class="role-top">
+                <span class="role-tag" data-i18n="roles.auto.tag">03 · ALSO OPEN TO</span>
+                <i class="bx bx-bot role-icon"></i>
+              </div>
+              <h3>QA Automation</h3>
+              <p class="role-pitch" data-i18n="roles.auto.pitch">
+                Automating the checks that matter with Cypress — a solid foundation that I'm ready to grow in a dedicated
+                QA role.
               </p>
+              <ul class="role-list">
+                <li data-i18n="roles.auto.b1"><strong>E2E tests in Cypress</strong> for real user flows</li>
+                <li data-i18n="roles.auto.b2"><strong>Unit &amp; Component tests</strong> to catch regressions early</li>
+                <li data-i18n="roles.auto.b3"><strong>JavaScript / TypeScript</strong> fluency — writing test code comes naturally</li>
+              </ul>
+              <div class="chips tags"><span>Cypress</span><span>JavaScript</span><span>TypeScript</span><span>E2E</span></div>
+              <a class="role-link" href="mailto:sirawitpai0@gmail.com?subject=QA%20Automation%20opportunity" data-i18n="roles.cta">Discuss this role <i class="bx bx-up-arrow-alt"></i></a>
             </article>
           </div>
         </div>
       </section>
+
+      <!-- ============ 03 SKILLS ============ -->
       <section class="section skills-section" id="skills">
         <div class="container">
           <div class="section-head reveal">
-            <span data-i18n="skills.label">02 / EXPERTISE</span>
-            <h2 data-i18n="skills.title">
-              A practical toolkit for<br /><em>modern products.</em>
-            </h2>
+            <span data-i18n="skills.label">03 / EXPERTISE</span>
+            <h2 data-i18n="skills.title" data-split>A practical toolkit for<br /><em>modern products.</em></h2>
           </div>
-          <div class="skill-groups reveal">
-            <div class="skill-group">
-              <h3 data-i18n="skills.core">Core — used daily</h3>
-              <div class="chips core">
-                <span>Next.js</span><span>React</span><span>TypeScript</span
-                ><span>JavaScript</span><span>HTML5</span
-                ><span>CSS3 / SCSS</span><span>Three.js</span
-                ><span>Web3 wallet integration</span><span>Git / GitHub</span>
-              </div>
+          <div class="skills-layout">
+            <div class="sphere-wrap reveal">
+              <div class="tag-sphere" id="tagSphere" aria-hidden="true"></div>
+              <p class="sphere-hint" data-i18n="skills.hint">Move your cursor to spin · pick a category to highlight</p>
             </div>
-            <div class="skill-group">
-              <h3 data-i18n="skills.also">Also worked with</h3>
-              <div class="chips">
-                <span>Vue / Nuxt</span><span>Node.js / Express</span
-                ><span>REST API</span><span>MongoDB</span><span>Firebase</span
-                ><span>MySQL</span><span>Jenkins</span><span>React Native</span
-                ><span>Flutter</span><span>PHP</span><span>Python</span
-                ><span>Java</span>
+            <div class="skills-panel reveal">
+              <div class="skill-tabs" role="tablist" aria-label="Skill categories">
+                <button class="skill-tab active" type="button" data-filter="all" data-i18n="skills.tab.all">All</button>
+                <button class="skill-tab" type="button" data-filter="core" data-i18n="skills.tab.core">Core</button>
+                <button class="skill-tab" type="button" data-filter="backend" data-i18n="skills.tab.backend">Back end &amp; more</button>
+                <button class="skill-tab" type="button" data-filter="qa" data-i18n="skills.tab.qa">Testing &amp; QA</button>
+                <button class="skill-tab" type="button" data-filter="design" data-i18n="skills.tab.design">Design</button>
               </div>
-            </div>
-            <div class="skill-group">
-              <h3 data-i18n="skills.design">Design tools</h3>
-              <div class="chips">
-                <span>Figma</span><span>Adobe XD</span><span>Photoshop</span
-                ><span>Illustrator</span>
+              <div class="skill-groups" id="skillGroups">
+                <div class="skill-group" data-cat="core">
+                  <h3 data-i18n="skills.core">Core — used daily</h3>
+                  <div class="chips core">
+                    <span>Next.js</span><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3 / SCSS</span><span>Three.js</span><span>Web3 wallet integration</span><span>Git / GitHub</span>
+                  </div>
+                </div>
+                <div class="skill-group" data-cat="backend">
+                  <h3 data-i18n="skills.also">Back end &amp; other tools</h3>
+                  <div class="chips">
+                    <span>Node.js / Express</span><span>REST API</span><span>MongoDB</span><span>MySQL</span><span>Firebase</span><span>Jenkins</span><span>Vue / Nuxt</span><span>React Native</span><span>Flutter</span><span>PHP</span><span>Python</span><span>Java</span>
+                  </div>
+                </div>
+                <div class="skill-group" data-cat="qa">
+                  <h3 data-i18n="skills.qa">Testing &amp; QA</h3>
+                  <div class="chips qa-chips">
+                    <span>Cypress</span><span>Postman</span><span>Jira</span><span>Unit Testing</span><span>Component Testing</span><span>E2E Testing</span><span>API Testing</span><span>Bug Reporting</span>
+                  </div>
+                </div>
+                <div class="skill-group" data-cat="design">
+                  <h3 data-i18n="skills.design">Design tools</h3>
+                  <div class="chips"><span>Figma</span><span>Adobe XD</span><span>Photoshop</span><span>Illustrator</span></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section container" id="experience">
-        <div class="section-head reveal">
-          <span data-i18n="exp.label">03 / EXPERIENCE</span>
-          <h2 data-i18n="exp.title">
-            Experience shaped by<br /><em>real-world delivery.</em>
-          </h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="time">
-              <strong data-i18n="exp.kos.date">Nov 2021 — Present</strong>
-            </div>
-            <div class="company-logo">
-              <img
-                alt="KOS Design"
-                src="assets/img/experience/kos/logo.png"
-                loading="lazy"
-              />
-            </div>
-            <div class="timeline-copy">
-              <span data-i18n="exp.kos.role"
-                >FULL STACK DEVELOPER · FRONTEND-FOCUSED</span
-              >
-              <h3>KOS Design</h3>
-              <ul>
-                <li data-i18n="exp.kos.b1">
-                  Built <strong>Nakamoto Games</strong>, an NFT game aggregation
-                  platform, in Next.js — the user interface plus Web3
-                  digital-wallet integration.
-                </li>
-                <li data-i18n="exp.kos.b2">
-                  Developed the Nakamoto admin back office used to manage
-                  platform data, statuses and day-to-day operations.
-                </li>
-                <li data-i18n="exp.kos.b3">
-                  Built <strong>Outlanders</strong>, a Web3 NFT game — UI and
-                  core gameplay features in Next.js, with 3D character models
-                  rendered in Three.js.
-                </li>
-                <li data-i18n="exp.kos.b4">
-                  Delivered <strong>Monster Ville</strong>, a Telegram mini-game
-                  app with bot integration, and the Nakaverse game information
-                  page.
-                </li>
-              </ul>
-              <div class="chips tags">
-                <span>Next.js</span><span>React</span><span>TypeScript</span
-                ><span>Three.js</span><span>Web3</span><span>Telegram Bot</span>
-              </div>
-              <a
-                data-i18n="exp.visitCompany"
-                href="https://www.kos.co.th/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Visit company <i class="bx bx-up-arrow-alt"></i
-              ></a>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="time">
-              <strong data-i18n="exp.px.date">Nov 2023 — Jul 2024</strong
-              ><small data-i18n="exp.px.type">Freelance</small>
-            </div>
-            <div class="company-logo">
-              <img
-                alt="Planet X Technology"
-                src="assets/img/experience/planet-x/logo.png"
-                loading="lazy"
-              />
-            </div>
-            <div class="timeline-copy">
-              <span data-i18n="exp.px.role"
-                >FRONTEND DEVELOPER · FREELANCE</span
-              >
-              <h3>Planet X Technology</h3>
-              <ul>
-                <li data-i18n="exp.px.b1">
-                  Built the UI and core features of <strong>Deal</strong>, an
-                  online platform matching investors with entrepreneurs, and its
-                  back office, in Next.js.
-                </li>
-                <li data-i18n="exp.px.b2">
-                  Designed and developed <strong>GOGOJII Privilege</strong>, a
-                  voucher and privileges platform, with its back-office
-                  management system.
-                </li>
-                <li data-i18n="exp.px.b3">
-                  Built <strong>GOGOJII Maid Service &amp; Work Order</strong>,
-                  a system for requesting and managing housekeeping jobs.
-                </li>
-                <li data-i18n="exp.px.b4">
-                  Developed the first version of the company's landing page.
-                </li>
-              </ul>
-              <div class="chips tags">
-                <span>Next.js</span><span>React</span><span>Figma</span>
-              </div>
-              <a
-                data-i18n="exp.visitCompany"
-                href="https://planetxtechnology.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Visit company <i class="bx bx-up-arrow-alt"></i
-              ></a>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="time">
-              <strong data-i18n="exp.scb.date">Jan — Apr 2021</strong
-              ><small data-i18n="exp.scb.type">Internship</small>
-            </div>
-            <div class="company-logo">
-              <img
-                alt="Siam Commercial Bank"
-                src="assets/img/experience/scb-logo.webp"
-                loading="lazy"
-              />
-            </div>
-            <div class="timeline-copy">
-              <span data-i18n="exp.scb.role"
-                >DEVELOPER INTERN · DIGITAL BANKING</span
-              >
-              <h3>Siam Commercial Bank (SCB)</h3>
-              <ul>
-                <li data-i18n="exp.scb.b1">
-                  Designed screens in Figma and built an internal admin web
-                  dashboard with Next.js and Express.js.
-                </li>
-              </ul>
-              <div class="chips tags">
-                <span>Next.js</span><span>Express.js</span><span>Figma</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="section projects-section" id="projects">
+
+      <!-- ============ 04 QA ============ -->
+      <section class="section qa-section" id="qa">
         <div class="container">
           <div class="section-head reveal">
-            <span data-i18n="projects.label">04 / SELECTED WORK</span>
-            <h2 data-i18n="projects.title">
-              Projects that combine<br /><em>function and character.</em>
-            </h2>
+            <span data-i18n="qa.label">04 / QUALITY ASSURANCE</span>
+            <h2 data-i18n="qa.title" data-split>Shipping is half the job.<br /><em>Proving it works is the other.</em></h2>
           </div>
-          <div class="projects-grid">
-              <a href="https://www.nakamoto.games/" class="project project-wide reveal">
-                <img
-                  alt="Nakamoto Games"
-                  src="assets/img/experience/kos/nakamoto.jpeg"
-                  loading="lazy"
-                />
+          <div class="qa-intro reveal">
+            <p class="lead" data-i18n="qa.lead">I look at every feature from both sides — how it's built, and how it could break.</p>
+            <p data-i18n="qa.story">
+              Alongside development, I've tested systems and web workflows hands-on: checking APIs in Postman, automating
+              user flows with Cypress, writing unit and component tests, and tracking issues in Jira until each fix is
+              verified. Knowing the code behind the screen helps me find root causes faster — and write bug reports
+              developers can act on right away.
+            </p>
+          </div>
+          <div class="qa-grid">
+            <div class="terminal reveal" id="qaTerminal">
+              <div class="term-bar">
+                <span></span><span></span><span></span>
+                <em data-i18n="qa.termNote">cypress run · sample output</em>
+                <button class="term-replay" id="termReplay" type="button" aria-label="Replay test run"><i class="bx bx-revision"></i></button>
+              </div>
+              <div class="term-body" id="termBody" aria-hidden="true"></div>
+              <div class="term-foot">
+                <div class="term-progress"><i id="termBar"></i></div>
+                <span id="termCount">0 passing</span>
+              </div>
+            </div>
+            <div class="pyramid-wrap reveal">
+              <h3 data-i18n="qa.pyrTitle">The testing pyramid I work with</h3>
+              <div class="pyramid stagger">
+                <div class="pyr-layer l-e2e"><strong>E2E</strong><small data-i18n="qa.pyr.e2e">Real user flows in the browser</small><em>Cypress</em></div>
+                <div class="pyr-layer l-comp"><strong>Component</strong><small data-i18n="qa.pyr.comp">UI components in isolation</small></div>
+                <div class="pyr-layer l-unit"><strong>Unit</strong><small data-i18n="qa.pyr.unit">Functions &amp; business logic</small></div>
+              </div>
+              <div class="pyr-api"><i class="bx bx-transfer-alt"></i><span data-i18n="qa.pyr.api">API layer checked with Postman</span></div>
+            </div>
+          </div>
+          <div class="qa-cards stagger">
+            <article class="qa-card-item spot">
+              <div class="qa-ico"><i class="bx bx-send"></i></div>
+              <span class="qa-tool">Postman</span>
+              <h3 data-i18n="qa.c1.title">API Testing</h3>
+              <p data-i18n="qa.c1.desc">Requests and collections in Postman to verify endpoints, status codes, payloads and error handling.</p>
+            </article>
+            <article class="qa-card-item spot">
+              <div class="qa-ico"><i class="bx bx-git-branch"></i></div>
+              <span class="qa-tool">Manual</span>
+              <h3 data-i18n="qa.c2.title">Workflow Testing</h3>
+              <p data-i18n="qa.c2.desc">Walking through multi-page web flows step by step to confirm the system behaves correctly at each stage.</p>
+            </article>
+            <article class="qa-card-item spot">
+              <div class="qa-ico"><i class="bx bx-check-double"></i></div>
+              <span class="qa-tool">Cypress · Unit · Component</span>
+              <h3 data-i18n="qa.c3.title">Automated Tests</h3>
+              <p data-i18n="qa.c3.desc">E2E journeys in Cypress plus unit and component tests that catch regressions before they reach users.</p>
+            </article>
+            <article class="qa-card-item spot">
+              <div class="qa-ico"><i class="bx bx-bug"></i></div>
+              <span class="qa-tool">Jira</span>
+              <h3 data-i18n="qa.c4.title">Bug Tracking</h3>
+              <p data-i18n="qa.c4.desc">Issues logged in Jira with steps to reproduce, expected vs. actual results and evidence — then retested once fixed.</p>
+            </article>
+          </div>
+          <div class="qa-flow reveal">
+            <h3 data-i18n="qa.flowTitle">My testing workflow</h3>
+            <ol class="flow-steps" id="flowSteps">
+              <li class="flow-step"><span class="flow-num">01</span><strong data-i18n="qa.f1.t">Understand</strong><small data-i18n="qa.f1.d">Requirements &amp; acceptance criteria</small></li>
+              <li class="flow-step"><span class="flow-num">02</span><strong data-i18n="qa.f2.t">Plan</strong><small data-i18n="qa.f2.d">Test scenarios &amp; test cases</small></li>
+              <li class="flow-step"><span class="flow-num">03</span><strong data-i18n="qa.f3.t">Execute</strong><small data-i18n="qa.f3.d">Manual + Cypress + Postman</small></li>
+              <li class="flow-step"><span class="flow-num">04</span><strong data-i18n="qa.f4.t">Report</strong><small data-i18n="qa.f4.d">Clear bug tickets in Jira</small></li>
+              <li class="flow-step"><span class="flow-num">05</span><strong data-i18n="qa.f5.t">Verify</strong><small data-i18n="qa.f5.d">Retest &amp; regression</small></li>
+            </ol>
+          </div>
+          <p class="qa-note reveal" data-i18n="qa.note">
+            <i class="bx bx-info-circle"></i> My 4 years 9 months are in frontend development. Testing is hands-on
+            experience gained alongside that work — a foundation I'm ready to grow in a dedicated QA role.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 05 EXPERIENCE ============ -->
+      <section class="section container" id="experience">
+        <div class="section-head reveal">
+          <span data-i18n="exp.label">05 / EXPERIENCE</span>
+          <h2 data-i18n="exp.title" data-split>Experience shaped by<br /><em>real-world delivery.</em></h2>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="timeline-rail" aria-hidden="true"><i id="timelineFill"></i></div>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="time">
+              <strong data-i18n="exp.kos.date">Nov 2021 — Present</strong>
+              <small data-i18n="exp.kos.type">Full-time</small>
+            </div>
+            <div class="company-logo"><img alt="KOS Design" src="assets/img/experience/kos/logo.png" loading="lazy" /></div>
+            <div class="timeline-copy">
+              <span data-i18n="exp.kos.role">FULL STACK DEVELOPER · FRONTEND-FOCUSED</span>
+              <h3>KOS Design</h3>
+              <ul>
+                <li data-i18n="exp.kos.b1">Built <strong>Nakamoto Games</strong>, an NFT game aggregation platform, in Next.js — the UI plus Web3 digital-wallet integration.</li>
+                <li data-i18n="exp.kos.b2">Developed the Nakamoto admin back office for managing platform data, statuses and day-to-day operations.</li>
+                <li data-i18n="exp.kos.b3">Built <strong>Outlanders</strong>, a Web3 NFT game — UI and core gameplay features in Next.js, with 3D character models rendered in Three.js.</li>
+                <li data-i18n="exp.kos.b4">Delivered <strong>Monster Ville</strong>, a Telegram mini-game with bot integration, and the Nakaverse game information site.</li>
+              </ul>
+              <div class="chips tags"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Three.js</span><span>Web3</span><span>Telegram Bot</span></div>
+              <a data-i18n="exp.visitCompany" href="https://www.kos.co.th/" target="_blank" rel="noopener noreferrer">Visit website <i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="time">
+              <strong data-i18n="exp.px.date">Nov 2023 — Jul 2024</strong>
+              <small data-i18n="exp.px.type">Freelance</small>
+            </div>
+            <div class="company-logo"><img alt="Planet X Technology" src="assets/img/experience/planet-x/logo.png" loading="lazy" /></div>
+            <div class="timeline-copy">
+              <span data-i18n="exp.px.role">FRONTEND DEVELOPER · FREELANCE</span>
+              <h3>Planet X Technology</h3>
+              <ul>
+                <li data-i18n="exp.px.b1">Built the UI and core features of <strong>Deal</strong>, an online platform matching investors with entrepreneurs, plus its back office, in Next.js.</li>
+                <li data-i18n="exp.px.b2">Designed and developed <strong>GOGOJII Privilege</strong>, a voucher and privileges platform, with its back-office management system.</li>
+                <li data-i18n="exp.px.b3">Built <strong>GOGOJII Maid Service &amp; Work Order</strong>, a system for requesting and managing housekeeping jobs.</li>
+                <li data-i18n="exp.px.b4">Developed the first version of the company's landing page.</li>
+              </ul>
+              <div class="chips tags"><span>Next.js</span><span>React</span><span>Figma</span></div>
+              <a data-i18n="exp.visitCompany" href="https://planetxtechnology.com/" target="_blank" rel="noopener noreferrer">Visit website <i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="time">
+              <strong data-i18n="exp.scb.date">Jan — Apr 2021</strong>
+              <small data-i18n="exp.scb.type">Internship</small>
+            </div>
+            <div class="company-logo"><img alt="Siam Commercial Bank" src="assets/img/experience/scb-logo.webp" loading="lazy" /></div>
+            <div class="timeline-copy">
+              <span data-i18n="exp.scb.role">DEVELOPER INTERN · DIGITAL BANKING</span>
+              <h3>Siam Commercial Bank (SCB)</h3>
+              <ul>
+                <li data-i18n="exp.scb.b1">Designed screens in Figma and built an internal admin dashboard with Next.js and Express.js.</li>
+              </ul>
+              <div class="chips tags"><span>Next.js</span><span>Express.js</span><span>Figma</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ 06 PROJECTS ============ -->
+      <section class="section projects-section" id="projects">
+        <div class="container projects-head">
+          <div class="section-head reveal">
+            <span data-i18n="projects.label">06 / SELECTED WORK</span>
+            <h2 data-i18n="projects.title" data-split>Projects that combine<br /><em>function and character.</em></h2>
+          </div>
+          <div class="h-meta reveal">
+            <span class="h-count"><b id="hIndex">01</b> / 06</span>
+            <span class="h-hint" data-i18n="projects.hint">Keep scrolling <i class="bx bx-right-arrow-alt"></i></span>
+          </div>
+        </div>
+        <div class="h-scroll" id="hScroll">
+          <div class="h-sticky">
+            <div class="h-track projects-grid" id="hTrack">
+              <a href="https://www.nakamoto.games/" target="_blank" rel="noopener noreferrer" class="project project-wide reveal">
+                <img alt="Nakamoto Games" src="assets/img/experience/kos/nakamoto.jpeg" loading="lazy" />
+                <span class="project-num">01</span><span class="project-live" data-i18n="project.live">Live site <i class="bx bx-up-arrow-alt"></i></span>
                 <div class="project-overlay">
-                  <span data-i18n="project.nakamoto.tag"
-                    >WEB3 GAME PLATFORM · KOS DESIGN</span
-                  >
+                  <span data-i18n="project.nakamoto.tag">WEB3 GAME PLATFORM · KOS DESIGN</span>
                   <h3>Nakamoto Games</h3>
-                  <p data-i18n="project.nakamoto.desc">
-                    An NFT game aggregation platform where players connect a
-                    digital wallet and play across many games. Includes the
-                    admin back office.
-                  </p>
-                  <p class="project-meta">
-                    <span data-i18n="project.role.uiCore"
-                      >Role: UI and core features</span
-                    >
-                    · Next.js, Web3
-                  </p>
+                  <p data-i18n="project.nakamoto.desc">An NFT game aggregation platform where players connect a digital wallet and play many games in one place. Includes the admin back office.</p>
+                  <p class="project-meta"><span data-i18n="project.role.uiCore">Role: UI and core features</span> · Next.js, Web3</p>
                 </div>
               </a>
-            </a>
-            <a href="https://outlanders.com" class="project reveal">
-              <img
-                alt="Outlanders"
-                src="assets/img/experience/kos/outlander.jpg"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <span data-i18n="project.outlanders.tag"
-                  >WEB3 NFT GAME · KOS DESIGN</span
-                >
-                <h3>Outlanders</h3>
-                <p data-i18n="project.outlanders.desc">
-                  A wallet-based NFT game with 3D character models rendered in
-                  the browser.
-                </p>
-                <p class="project-meta">
-                  <span data-i18n="project.role.uiCore"
-                    >Role: UI and core features</span
-                  >
-                  · Next.js, Three.js, Web3
-                </p>
-              </div>
-            </a>
-            <a href="https://nakaverse.naka.bot" class="project reveal">
-              <img
-                alt="Nakaverse"
-                src="assets/img/experience/kos/nakaverse.jpg"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <span data-i18n="project.nakaverse.tag"
-                  >GAME INFORMATION SITE · KOS DESIGN</span
-                >
-                <h3>Nakaverse</h3>
-                <p data-i18n="project.nakaverse.desc">
-                  The information site presenting the Nakaverse game in detail.
-                </p>
-                <p class="project-meta">
-                  <span data-i18n="project.role.ui"
-                    >Role: UI design and implementation</span
-                  >
-                  · Next.js
-                </p>
-              </div>
-            </a>
-            <article class="project reveal">
-              <img
-                alt="Deal"
-                src="assets/img/experience/planet-x/1.webp"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <span data-i18n="project.deal.tag"
-                  >INVESTMENT MATCHING PLATFORM · PLANET X</span
-                >
-                <h3>Deal</h3>
-                <p data-i18n="project.deal.desc">
-                  An online platform connecting investors with entrepreneurs,
-                  plus its back office.
-                </p>
-                <p class="project-meta">
-                  <span data-i18n="project.role.uiBo"
-                    >Role: UI, core features and back office</span
-                  >
-                  · Next.js
-                </p>
-              </div>
-            </article>
-            <article class="project reveal">
-              <img
-                alt="GOGOJII Privilege"
-                src="assets/img/experience/planet-x/2.webp"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <span data-i18n="project.privilege.tag"
-                  >VOUCHER PLATFORM · PLANET X</span
-                >
-                <h3>GOGOJII Privilege</h3>
-                <p data-i18n="project.privilege.desc">
-                  A platform gathering vouchers and privileges to help merchants
-                  grow sales, with a back-office dashboard.
-                </p>
-                <p class="project-meta">
-                  <span data-i18n="project.role.uiBo"
-                    >Role: UI, core features and back office</span
-                  >
-                  · Next.js
-                </p>
-              </div>
-            </article>
-            <article class="project project-wide reveal">
-              <img
-                alt="GOGOJII Maid Service &amp; Work Order"
-                src="assets/img/experience/planet-x/3.webp"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <span data-i18n="project.maid.tag"
-                  >SERVICE MANAGEMENT SYSTEM · PLANET X</span
-                >
-                <h3>GOGOJII Maid Service &amp; Work Order</h3>
-                <p data-i18n="project.maid.desc">
-                  A work-order system for requesting and tracking housekeeping
-                  services, making room-cleaning operations faster.
-                </p>
-                <p class="project-meta">
-                  <span data-i18n="project.role.uiCore"
-                    >Role: UI and core features</span
-                  >
-                  · Next.js
-                </p>
-              </div>
-            </article>
+              <a href="https://outlanders.com" target="_blank" rel="noopener noreferrer" class="project reveal">
+                <img alt="Outlanders" src="assets/img/experience/kos/outlander.jpg" loading="lazy" />
+                <span class="project-num">02</span><span class="project-live" data-i18n="project.live">Live site <i class="bx bx-up-arrow-alt"></i></span>
+                <div class="project-overlay">
+                  <span data-i18n="project.outlanders.tag">WEB3 NFT GAME · KOS DESIGN</span>
+                  <h3>Outlanders</h3>
+                  <p data-i18n="project.outlanders.desc">A wallet-based NFT game with 3D character models rendered in the browser.</p>
+                  <p class="project-meta"><span data-i18n="project.role.uiCore">Role: UI and core features</span> · Next.js, Three.js, Web3</p>
+                </div>
+              </a>
+              <a href="https://nakaverse.naka.bot" target="_blank" rel="noopener noreferrer" class="project reveal">
+                <img alt="Nakaverse" src="assets/img/experience/kos/nakaverse.jpg" loading="lazy" />
+                <span class="project-num">03</span><span class="project-live" data-i18n="project.live">Live site <i class="bx bx-up-arrow-alt"></i></span>
+                <div class="project-overlay">
+                  <span data-i18n="project.nakaverse.tag">GAME INFORMATION SITE · KOS DESIGN</span>
+                  <h3>Nakaverse</h3>
+                  <p data-i18n="project.nakaverse.desc">An information site presenting the Nakaverse game in detail.</p>
+                  <p class="project-meta"><span data-i18n="project.role.ui">Role: UI design and implementation</span> · Next.js</p>
+                </div>
+              </a>
+              <article class="project reveal">
+                <img alt="Deal" src="assets/img/experience/planet-x/1.webp" loading="lazy" />
+                <span class="project-num">04</span>
+                <div class="project-overlay">
+                  <span data-i18n="project.deal.tag">INVESTMENT MATCHING PLATFORM · PLANET X</span>
+                  <h3>Deal</h3>
+                  <p data-i18n="project.deal.desc">An online platform connecting investors with entrepreneurs, plus its back office.</p>
+                  <p class="project-meta"><span data-i18n="project.role.uiBo">Role: UI, core features and back office</span> · Next.js</p>
+                </div>
+              </article>
+              <article class="project reveal">
+                <img alt="GOGOJII Privilege" src="assets/img/experience/planet-x/2.webp" loading="lazy" />
+                <span class="project-num">05</span>
+                <div class="project-overlay">
+                  <span data-i18n="project.privilege.tag">VOUCHER PLATFORM · PLANET X</span>
+                  <h3>GOGOJII Privilege</h3>
+                  <p data-i18n="project.privilege.desc">A platform that brings vouchers and privileges together to help merchants grow sales, with a back-office dashboard.</p>
+                  <p class="project-meta"><span data-i18n="project.role.uiBo">Role: UI, core features and back office</span> · Next.js</p>
+                </div>
+              </article>
+              <article class="project project-wide reveal">
+                <img alt="GOGOJII Maid Service &amp; Work Order" src="assets/img/experience/planet-x/3.webp" loading="lazy" />
+                <span class="project-num">06</span>
+                <div class="project-overlay">
+                  <span data-i18n="project.maid.tag">SERVICE MANAGEMENT SYSTEM · PLANET X</span>
+                  <h3>GOGOJII Maid Service &amp; Work Order</h3>
+                  <p data-i18n="project.maid.desc">A work-order system for requesting and tracking housekeeping services, making room cleaning faster to manage.</p>
+                  <p class="project-meta"><span data-i18n="project.role.uiCore">Role: UI and core features</span> · Next.js</p>
+                </div>
+              </article>
+            </div>
+            <div class="h-progress" aria-hidden="true"><i id="hBar"></i></div>
           </div>
         </div>
       </section>
+
+      <!-- ============ 07 GALLERY ============ -->
       <section class="section gallery container">
         <div class="section-head reveal">
-          <span data-i18n="gallery.label">05 / BEHIND THE SCENES</span>
-          <h2 data-i18n="gallery.title">
-            People, process,<br /><em>and continuous growth.</em>
-          </h2>
+          <span data-i18n="gallery.label">07 / BEHIND THE SCENES</span>
+          <h2 data-i18n="gallery.title" data-split>People, process<br /><em>and continuous growth.</em></h2>
         </div>
-        <div class="gallery-grid reveal">
-          <img
-            alt="Sirawit at work"
-            src="assets/img/work/work1.webp"
-            loading="lazy"
-          /><img
-            alt="Team activity"
-            src="assets/img/work/work2.webp"
-            loading="lazy"
-          /><img
-            alt="The team at KOS Design"
-            src="assets/img/work/kos.webp"
-            loading="lazy"
-          /><img
-            alt="Team event"
-            src="assets/img/work/work6.webp"
-            loading="lazy"
-          />
+        <div class="gallery-grid">
+          <figure class="g-item" data-speed="-0.06"><img alt="Sirawit at work" src="assets/img/work/work1.webp" loading="lazy" /></figure>
+          <figure class="g-item" data-speed="0.08"><img alt="Team activity" src="assets/img/work/work2.webp" loading="lazy" /></figure>
+          <figure class="g-item" data-speed="-0.1"><img alt="The team at KOS Design" src="assets/img/work/kos.webp" loading="lazy" /></figure>
+          <figure class="g-item" data-speed="0.05"><img alt="Team event" src="assets/img/work/work6.webp" loading="lazy" /></figure>
         </div>
       </section>
+
+      <!-- ============ CONTACT ============ -->
       <section class="contact-section" id="contact">
+        <div class="contact-marquee" aria-hidden="true">
+          <div class="contact-marquee-track">
+            <span>LET'S WORK TOGETHER</span><b>✦</b><span>FULL STACK</span><b>✦</b><span>QA</span><b>✦</b><span>LET'S WORK TOGETHER</span><b>✦</b><span>FULL STACK</span><b>✦</b><span>QA</span><b>✦</b>
+          </div>
+        </div>
         <div class="container contact-inner reveal">
           <div>
             <span data-i18n="contact.label">LET'S BUILD SOMETHING GREAT</span>
-            <h2 data-i18n="contact.title">
-              Have a project or<br />opportunity in mind?
-            </h2>
+            <h2 data-i18n="contact.title" data-split>Have a project or<br />opportunity in mind?</h2>
+            <button class="copy-email" id="copyEmail" type="button">
+              <i class="bx bx-copy"></i><span>sirawitpai0@gmail.com</span><em data-i18n="contact.copy">Copy</em>
+            </button>
           </div>
-          <a class="contact-circle" href="mailto:sirawitpai0@gmail.com"
-            ><span data-i18n="contact.sayHello">Say hello</span
-            ><i class="bx bx-up-arrow-alt"></i
-          ></a>
+          <a class="contact-circle magnetic" href="mailto:sirawitpai0@gmail.com">
+            <svg class="contact-ring" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="ringPath" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0" /></defs>
+              <text><textPath href="#ringPath">OPEN TO WORK • FULL STACK • MANUAL QA • QA AUTOMATION • </textPath></text>
+            </svg>
+            <span class="contact-core"><span data-i18n="contact.sayHello">Say hello</span><i class="bx bx-up-arrow-alt"></i></span>
+          </a>
         </div>
         <div class="container contact-details">
           <a href="mailto:sirawitpai0@gmail.com">sirawitpai0@gmail.com</a
           ><a href="tel:+66911086614">+66 91 108 6614</a
-          ><a
-            href="https://www.linkedin.com/in/sirawit-pai-13342b200/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          ><a
-            href="https://github.com/SirawitPai"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
+          ><a href="https://www.linkedin.com/in/sirawit-pai-13342b200/" target="_blank" rel="noopener noreferrer">LinkedIn</a
+          ><a href="https://github.com/SirawitPai" target="_blank" rel="noopener noreferrer">GitHub</a
           ><span data-i18n="contact.location">Nonthaburi, Thailand</span>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container footer-inner">
         <div class="brand">SB<span>.</span></div>
-        <p data-i18n="footer.copy">
-          © <span id="year"></span> Sirawit Boonthong. Designed & built with
-          care.
-        </p>
-        <a data-i18n="footer.top" href="#home"
-          >Back to top <i class="bx bx-up-arrow-alt"></i
-        ></a>
+        <p data-i18n="footer.copy">© <span id="year"></span> Sirawit Boonthong. Designed &amp; built with care.</p>
+        <a data-i18n="footer.top" href="#home">Back to top <i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
     <script src="assets/js/i18n-data.js"></script>
     <script src="assets/js/portfolio.js"></script>
   </body>
