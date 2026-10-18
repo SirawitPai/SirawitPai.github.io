@@ -1,0 +1,24 @@
+{
+  "name": "sirawit-portfolio",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Personal portfolio of Sirawit Boonthong — static site with Jest (web) and Postman/Newman (API) tests.",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:api": "node scripts/run-api-tests.js",
+    "test:api:prod": "newman run postman/portfolio.postman_collection.json -e postman/production.postman_environment.json",
+    "test:all": "npm test && npm run test:api"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": ["<rootDir>/tests/**/*.test.js"],
+    "collectCoverageFrom": ["assets/js/**/*.js"]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "newman": "^6.2.1"
+  }
+}

@@ -73,14 +73,25 @@
   /* ---------- i18n ---------- */
   const languageButton = document.getElementById('langBtn');
   const translations = window.I18N_TRANSLATIONS || {};
-  const t = (key, lang = root.lang) => translations[key]?.[lang === 'th' ? 'th' : 'en'] ?? '';
+  const utils = window.PortfolioUtils;
+  const experience = utils.experienceSince();
+  const tokensFor = (lang) => ({ exp: utils.formatDuration(experience, lang), years: utils.roundedYears(experience) });
+  const t = (key, lang = root.lang) => utils.fillTokens(utils.translate(translations, key, lang), tokensFor(lang));
+
+  // experience numbers are calculated from Nov 2021, so the page never goes stale
+  document.querySelectorAll('[data-exp]').forEach((el) => {
+    const value = el.dataset.exp === 'rounded' ? utils.roundedYears(experience) : experience[el.dataset.exp];
+    el.dataset.count = value;
+    el.textContent = value;
+  });
+
   const applyLanguage = (language) => {
     const lang = language === 'th' ? 'th' : 'en';
     root.lang = lang;
     body.classList.toggle('lang-th', lang === 'th');
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const value = translations[el.dataset.i18n]?.[lang];
-      if (value !== undefined) el.innerHTML = value;
+      if (value !== undefined) el.innerHTML = utils.fillTokens(value, tokensFor(lang));
     });
     document.title = t('meta.title', lang) || document.title;
     const description = document.querySelector('meta[name="description"]');
@@ -434,29 +445,29 @@
     });
   }
 
-  /* ---------- QA: illustrative Cypress + Postman run ---------- */
+  /* ---------- QA: replay of this site's own Jest + Postman (Newman) run ---------- */
   const termBody = document.getElementById('termBody');
   const termBar = document.getElementById('termBar');
   const termCount = document.getElementById('termCount');
   const termReplay = document.getElementById('termReplay');
   const terminal = document.getElementById('qaTerminal');
   const script = [
-    { t: 'cmd', h: '<b>$</b> npx cypress run --browser chrome' },
-    { t: 'file', h: 'Running: <b>auth.cy.ts</b>' },
-    { t: 'test', s: 'shows an error for invalid credentials', ms: 412 },
-    { t: 'test', s: 'logs in and redirects to the dashboard', ms: 893 },
-    { t: 'file', h: 'Running: <b>dashboard.cy.ts</b>' },
-    { t: 'test', s: 'filters the table by status', ms: 538 },
-    { t: 'test', s: 'opens the detail drawer on row click', ms: 361 },
-    { t: 'file', h: 'Running: <b>form.cy.ts</b>' },
-    { t: 'test', s: 'blocks submit when required fields are empty', ms: 274 },
-    { t: 'test', s: 'submits and shows a success toast', ms: 702 },
-    { t: 'cmd', h: '<b>$</b> postman collection run "Orders API"' },
-    { t: 'test', s: 'GET  /api/orders            → 200 OK', ms: 128 },
-    { t: 'test', s: 'POST /api/orders            → 201 · schema valid', ms: 164 },
-    { t: 'test', s: 'GET  /api/orders (no token) → 401', ms: 92 },
-    { t: 'sum', h: '✔ All specs passed' },
-    { t: 'jira', h: '→ Jira: QA-142 retested · moved to <b>Done</b>' },
+    { t: 'cmd', h: '<b>$</b> npm test' },
+    { t: 'file', h: '<b class="ok">PASS</b> tests/utils.test.js' },
+    { t: 'test', s: 'calculates experience since Nov 2021', ms: 4 },
+    { t: 'test', s: 'formats the duration in English and Thai', ms: 2 },
+    { t: 'file', h: '<b class="ok">PASS</b> tests/i18n.test.js' },
+    { t: 'test', s: 'every data-i18n key has EN and TH text', ms: 11 },
+    { t: 'test', s: 'keeps the same HTML tags in both languages', ms: 6 },
+    { t: 'file', h: '<b class="ok">PASS</b> tests/page.test.js' },
+    { t: 'test', s: 'switches the page to Thai and back', ms: 38 },
+    { t: 'test', s: 'copies the email and shows a toast', ms: 21 },
+    { t: 'cmd', h: '<b>$</b> npm run test:api <span class="dim"># newman + Postman collection</span>' },
+    { t: 'test', s: 'GET  /                        → 200 · text/html', ms: 46 },
+    { t: 'test', s: 'GET  /assets/pdf/Resume.pdf   → 200 · application/pdf', ms: 31 },
+    { t: 'test', s: 'GET  /missing-page            → 404', ms: 12 },
+    { t: 'test', s: 'GET  api.github.com/users/…   → 200 · login matches', ms: 228 },
+    { t: 'sum', h: '✔ All tests passed' },
   ];
   const totalTests = script.filter((l) => l.t === 'test').length;
   let runId = 0;
