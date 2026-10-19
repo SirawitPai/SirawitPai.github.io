@@ -1,12 +1,18 @@
 const {
-  CAREER_START, experienceSince, formatDuration, roundedYears, fillTokens, translate,
+  CAREER_START, CAREER_END, experienceSince, formatDuration, roundedYears, fillTokens, translate,
 } = require('../assets/js/utils');
 
 describe('experienceSince', () => {
-  test('calculates experience since Nov 2021', () => {
+  test('calculates experience from Nov 2021 to the end of Sep 2026', () => {
     expect(CAREER_START).toEqual({ year: 2021, month: 11 });
+    expect(CAREER_END).toEqual({ year: 2026, month: 10 });
+    expect(experienceSince(CAREER_START, new Date(2024, 10, 18))).toEqual({ years: 3, months: 0, totalMonths: 36 });
     expect(experienceSince(CAREER_START, new Date(2026, 9, 18))).toEqual({ years: 4, months: 11, totalMonths: 59 });
-    expect(experienceSince(CAREER_START, new Date(2026, 10, 1))).toEqual({ years: 5, months: 0, totalMonths: 60 });
+  });
+
+  test('stops counting after the last day at KOS Design', () => {
+    expect(experienceSince(CAREER_START, new Date(2027, 5, 1))).toEqual({ years: 4, months: 11, totalMonths: 59 });
+    expect(experienceSince(CAREER_START, new Date(2027, 5, 1), null).totalMonths).toBe(67);
   });
 
   test('never returns a negative duration', () => {

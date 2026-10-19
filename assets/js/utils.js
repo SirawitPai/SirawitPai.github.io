@@ -10,9 +10,15 @@
   /** First month of full-time work at KOS Design (month is 1-based). */
   const CAREER_START = Object.freeze({ year: 2021, month: 11 });
 
-  /** Whole years and months between a start month and `now`. Never negative. */
-  const experienceSince = (start = CAREER_START, now = new Date()) => {
-    const total = Math.max(0, (now.getFullYear() - start.year) * 12 + (now.getMonth() + 1 - start.month));
+  /** Last day at KOS Design was 30 Sep 2026, so experience stops counting from Oct 2026. */
+  const CAREER_END = Object.freeze({ year: 2026, month: 10 });
+
+  /** Whole years and months between a start month and `now`, capped at `end`. Never negative. */
+  const experienceSince = (start = CAREER_START, now = new Date(), end = CAREER_END) => {
+    const monthIndex = (y, m) => y * 12 + m;
+    const nowIndex = monthIndex(now.getFullYear(), now.getMonth() + 1);
+    const until = end ? Math.min(nowIndex, monthIndex(end.year, end.month)) : nowIndex;
+    const total = Math.max(0, until - monthIndex(start.year, start.month));
     return { years: Math.floor(total / 12), months: total % 12, totalMonths: total };
   };
 
@@ -45,5 +51,5 @@
     return entry[lang === 'th' ? 'th' : 'en'] ?? entry.en ?? '';
   };
 
-  return { CAREER_START, experienceSince, formatDuration, roundedYears, fillTokens, translate };
+  return { CAREER_START, CAREER_END, experienceSince, formatDuration, roundedYears, fillTokens, translate };
 });

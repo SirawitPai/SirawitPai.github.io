@@ -67,7 +67,7 @@
           }
         },
         {
-          "name": "Resume PDF",
+          "name": "CV PDF (English)",
           "event": [
             {
               "listen": "test",
@@ -84,12 +84,12 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{baseUrl}}/assets/pdf/Resume-SIRAWIT.pdf",
+            "url": "{{baseUrl}}/assets/pdf/CV-SIRAWIT-EN.pdf",
             "description": ""
           }
         },
         {
-          "name": "CV PDF",
+          "name": "CV PDF (Thai)",
           "event": [
             {
               "listen": "test",
@@ -106,7 +106,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{baseUrl}}/assets/pdf/CV-SIRAWIT.pdf",
+            "url": "{{baseUrl}}/assets/pdf/CV-SIRAWIT-TH.pdf",
             "description": ""
           }
         },

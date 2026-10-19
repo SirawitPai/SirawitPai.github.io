@@ -9,7 +9,7 @@ describe('page behaviour', () => {
     const visible = document.body.cloneNode(true);
     visible.querySelectorAll('script').forEach((s) => s.remove());
     expect(visible.innerHTML).not.toMatch(/\{\{\w+\}\}/);
-    expect(document.title).toBe('Sirawit Boonthong — Full Stack Developer & QA');
+    expect(document.title).toBe('Sirawit Boonthong — Full Stack Developer');
   });
 
   test('shows the experience calculated from the start date', () => {
@@ -34,6 +34,14 @@ describe('page behaviour', () => {
     btn.click();
     expect(document.documentElement.lang).toBe('en');
     expect(text('[data-i18n="nav.about"]')).toBe('About');
+  });
+
+  test('the nav CV button downloads the CV in the page language', () => {
+    loadPage();
+    const cv = document.querySelector('[data-cv-auto]');
+    expect(cv.getAttribute('href')).toBe('assets/pdf/CV-SIRAWIT-EN.pdf');
+    document.getElementById('langBtn').click();
+    expect(cv.getAttribute('href')).toBe('assets/pdf/CV-SIRAWIT-TH.pdf');
   });
 
   test('remembers the chosen language on the next visit', () => {

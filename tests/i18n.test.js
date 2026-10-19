@@ -8,7 +8,7 @@ const html = read('index.html');
 const usedKeys = [...new Set([...html.matchAll(/data-i18n="([^"]+)"/g)].map((m) => m[1]))];
 const JS_ONLY_KEYS = ['meta.title', 'meta.description', 'contact.copied'];
 // short labels that are written the same way in both languages
-const SAME_IN_BOTH = ['nav.qa', 'qa.f3.d'];
+const SAME_IN_BOTH = ['nav.cv', 'qa.f3.d'];
 
 const tagsOf = (s) => [...s.matchAll(/<\s*([a-z]+)/gi)].map((m) => m[1].toLowerCase()).filter((t) => t !== 'span').sort();
 const visibleText = (s) => {

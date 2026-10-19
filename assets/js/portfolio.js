@@ -78,7 +78,7 @@
   const tokensFor = (lang) => ({ exp: utils.formatDuration(experience, lang), years: utils.roundedYears(experience) });
   const t = (key, lang = root.lang) => utils.fillTokens(utils.translate(translations, key, lang), tokensFor(lang));
 
-  // experience numbers are calculated from Nov 2021, so the page never goes stale
+  // experience numbers are calculated from Nov 2021 to Sep 2026 (see utils.js)
   document.querySelectorAll('[data-exp]').forEach((el) => {
     const value = el.dataset.exp === 'rounded' ? utils.roundedYears(experience) : experience[el.dataset.exp];
     el.dataset.count = value;
@@ -96,6 +96,10 @@
     document.title = t('meta.title', lang) || document.title;
     const description = document.querySelector('meta[name="description"]');
     if (description && t('meta.description', lang)) description.content = t('meta.description', lang);
+    // the nav CV button downloads the CV in the language the page is shown in
+    document.querySelectorAll('[data-cv-auto]').forEach((a) => {
+      a.setAttribute('href', `assets/pdf/CV-SIRAWIT-${lang === 'th' ? 'TH' : 'EN'}.pdf`);
+    });
     languageButton.textContent = lang === 'en' ? 'TH' : 'EN';
     languageButton.setAttribute('aria-label', lang === 'en' ? 'เปลี่ยนเป็นภาษาไทย' : 'Switch to English');
     languageButton.title = lang === 'en' ? 'ภาษาไทย' : 'English';
@@ -230,7 +234,7 @@
   /* ---------- hero: typed role rotator ---------- */
   const typed = document.getElementById('typedRole');
   if (typed && !reduceMotion) {
-    const roles = ['Full Stack Developer', 'Manual QA', 'QA Automation', 'Frontend Specialist'];
+    const roles = ['Full Stack Developer', 'Frontend Specialist', 'Three.js 3D Web Developer'];
     (async () => {
       let i = 0;
       await sleep(2200);
@@ -454,7 +458,7 @@
   const script = [
     { t: 'cmd', h: '<b>$</b> npm test' },
     { t: 'file', h: '<b class="ok">PASS</b> tests/utils.test.js' },
-    { t: 'test', s: 'calculates experience since Nov 2021', ms: 4 },
+    { t: 'test', s: 'calculates experience from Nov 2021 to Sep 2026', ms: 4 },
     { t: 'test', s: 'formats the duration in English and Thai', ms: 2 },
     { t: 'file', h: '<b class="ok">PASS</b> tests/i18n.test.js' },
     { t: 'test', s: 'every data-i18n key has EN and TH text', ms: 11 },
@@ -464,7 +468,7 @@
     { t: 'test', s: 'copies the email and shows a toast', ms: 21 },
     { t: 'cmd', h: '<b>$</b> npm run test:api <span class="dim"># newman + Postman collection</span>' },
     { t: 'test', s: 'GET  /                        → 200 · text/html', ms: 46 },
-    { t: 'test', s: 'GET  /assets/pdf/Resume.pdf   → 200 · application/pdf', ms: 31 },
+    { t: 'test', s: 'GET  /assets/pdf/CV-EN.pdf    → 200 · application/pdf', ms: 31 },
     { t: 'test', s: 'GET  /missing-page            → 404', ms: 12 },
     { t: 'test', s: 'GET  api.github.com/users/…   → 200 · login matches', ms: 228 },
     { t: 'sum', h: '✔ All tests passed' },

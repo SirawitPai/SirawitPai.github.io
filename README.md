@@ -26,7 +26,7 @@ The Postman collection lives in `postman/` — import `portfolio.postman_collect
 
 ```
 index.html
-assets/js/utils.js        # experience length (from Nov 2021), {{token}} filling, translate()
+assets/js/utils.js        # experience length (Nov 2021 – Sep 2026), {{token}} filling, translate()
 assets/js/i18n-data.js    # every EN/TH string, keyed by data-i18n
 assets/js/portfolio.js    # interactions
 tests/                    # Jest tests
@@ -34,5 +34,10 @@ postman/                  # Postman collection + environments
 scripts/                  # tiny static server + Newman runner
 ```
 
-Experience length is calculated at page load from `CAREER_START` in `utils.js`, so text like
-"4 years 11 months" stays correct without manual edits.
+Experience length is calculated at page load from `CAREER_START` to `CAREER_END` in `utils.js`
+(Nov 2021 – Sep 2026), so text like "4 years 11 months" stays correct without manual edits.
+
+## CV downloads
+
+`assets/pdf/CV-SIRAWIT-EN.pdf` and `assets/pdf/CV-SIRAWIT-TH.pdf`. The nav **CV** button follows
+the page language; the hero and contact sections link to both.

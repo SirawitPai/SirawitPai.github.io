@@ -32,9 +32,10 @@ describe('page content', () => {
     expect(broken).toEqual([]);
   });
 
-  test('resume and CV can be downloaded', () => {
+  test('the CV can be downloaded in English and Thai, and the old resume is gone', () => {
     const downloads = all('a[download]').map((a) => a.getAttribute('href'));
-    expect(downloads).toEqual(expect.arrayContaining(['assets/pdf/Resume-SIRAWIT.pdf', 'assets/pdf/CV-SIRAWIT.pdf']));
+    expect(downloads).toEqual(expect.arrayContaining(['assets/pdf/CV-SIRAWIT-EN.pdf', 'assets/pdf/CV-SIRAWIT-TH.pdf']));
+    expect(downloads.filter((href) => /resume/i.test(href))).toEqual([]);
   });
 
   test('lists Jest and Postman as the main testing tools', () => {
@@ -42,18 +43,31 @@ describe('page content', () => {
     expect(qaSkills.slice(0, 2)).toEqual(['Jest', 'Postman']);
   });
 
-  test('includes everything from the CV and resume', () => {
+  test('includes everything from the CV', () => {
     const expected = [
       'KOS Design', 'Planet X Technology', 'Siam Commercial Bank',
       'Nakamoto Games', 'Nakamoto Admin', 'Outlanders', 'Monster Ville', 'Nakaverse',
       'Deal', 'GOGOJII Privilege', 'GOGOJII Maid Service', 'Company Landing Page', 'MDA',
-      'React Context', 'Redux', 'Zustand', 'React Query', 'Tailwind CSS',
-      'Telegram Mini Apps', 'LINE LIFF', 'Dialogflow', 'Vue / Nuxt', 'Jenkins',
+      'React Context', 'Redux', 'Zustand', 'React Query', 'Tailwind CSS', 'Three.js',
+      'Node.js (Express)', 'Golang', 'MongoDB', 'MySQL', 'Firebase',
+      'Telegram Mini Apps', 'BotFather', 'LINE LIFF', 'Dialogflow', 'Vue / Nuxt', 'Jenkins', 'Figma',
+      'ticket purchasing', 'daily quests', 'token staking', 'tournament system', 'end-to-end management',
+      'Nov 2021 — 30 Sep 2026',
       'Jest', 'Postman', 'Cypress', 'Integration Testing', 'Regression Testing', 'UAT',
       'Flower Shop Chatbot Management System', 'Facebook Page Admin',
       "King Mongkut's University of Technology North Bangkok", '+66 91 108 6614',
     ];
     const text = pageText();
     expect(expected.filter((item) => !text.includes(item))).toEqual([]);
+  });
+
+  test('only lists skills that are on the CV', () => {
+    const chips = all('#skillGroups .chips span').map((s) => s.textContent);
+    const notOnCv = ['React Native', 'Flutter', 'PHP', 'Python', 'Java', 'Adobe XD', 'Photoshop', 'Illustrator', 'Jira', 'Newman'];
+    expect(chips.filter((c) => notOnCv.includes(c))).toEqual([]);
+  });
+
+  test('applies for Full Stack Developer only', () => {
+    expect(pageText()).not.toMatch(/Manual QA|QA Automation/);
   });
 });
